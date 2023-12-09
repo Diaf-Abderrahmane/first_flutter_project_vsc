@@ -56,6 +56,7 @@ class SimpleProject extends StatelessWidget {
             Container(
               alignment: Alignment.center,
               height: 400,
+              width: double.infinity,
               margin: EdgeInsets.fromLTRB(0, 0, 0, 30),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
@@ -144,6 +145,7 @@ class SimpleProject extends StatelessWidget {
             Container(
               alignment: Alignment.center,
               height: 400,
+              width: double.infinity,
               margin: EdgeInsets.fromLTRB(0, 30, 0, 0),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
