@@ -51,7 +51,8 @@ class SimpleProject extends StatelessWidget {
         ],
       ),
       body: SingleChildScrollView(
-        child: Column(
+        scrollDirection: Axis.horizontal,
+        child: Row(
           // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           // crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -94,7 +95,7 @@ class SimpleProject extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 100,
+              width: 100,
             ),
             Container(
               // color: Colors.lightBlue, CANT USE COLOR AND DECORATIONS PROPERTIES AT THE SAME TIME
@@ -135,7 +136,7 @@ class SimpleProject extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 100,
+              width: 100,
             ),
             Container(
               // color: Colors.lightBlue, CANT USE COLOR AND DECORATIONS PROPERTIES AT THE SAME TIME
@@ -176,7 +177,7 @@ class SimpleProject extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 200,
+              width: 100,
             ),
             Container(
               // color: Colors.lightBlue, CANT USE COLOR AND DECORATIONS PROPERTIES AT THE SAME TIME
