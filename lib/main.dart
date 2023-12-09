@@ -50,12 +50,26 @@ class SimpleProject extends StatelessWidget {
               )),
         ],
       ),
-      body: Center(
-        child: Text(
-          "HELLO WORLD",
-          style: TextStyle(fontSize: 33),
+      body: Text(
+        "I apologize for the confusion in my previous response. It looks like there was a mistake in the instructions. The id() method is not used in the dependencies block in Gradle.",
+        style: TextStyle(
+          fontSize: 22,
+          wordSpacing: 2,
+          // letterSpacing: 2,
+          // color: Colors.amber,
+          // height: 1.5,
+          // letterSpacing: 2,
+          // fontWeight: FontWeight.w500,
+          // fontStyle: FontStyle.italic
+          // decoration: TextDecoration.underline
+          // backgroundColor: Colors.limeAccent,
         ),
+        maxLines: 2,
+        overflow: TextOverflow.ellipsis,
       ),
+      floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          child: IconButton(onPressed: () {}, icon: Icon(Icons.add))),
     );
   }
 }
