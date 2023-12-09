@@ -51,254 +51,113 @@ class SimpleProject extends StatelessWidget {
         ],
       ),
       body: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
-        child: Row(
-          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          // crossAxisAlignment: CrossAxisAlignment.center,
+        child: Column(
           children: [
             Container(
-              // color: Colors.lightBlue, CANT USE COLOR AND DECORATIONS PROPERTIES AT THE SAME TIME
-              // margin: EdgeInsets.all(600),
-              padding: EdgeInsets.all(10),
-              // height: 100,
-              // width: 300,
               alignment: Alignment.center,
+              height: 400,
+              margin: EdgeInsets.fromLTRB(0, 0, 0, 30),
               decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.black,
-                    width: 3,
-                  ),
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.black26
-                  // shape: BoxShape.circle, CANT BE USED WITH BORDER RADIUS
-                  ),
-              // transform: Matrix4.rotationZ(0.09),
-              // margin: EdgeInsets.symmetric(vertical: 111, horizontal: 30),
-              // margin: EdgeInsets.fromLTRB(30, 111, 30, 111),
-
+                borderRadius: BorderRadius.circular(15),
+                color: Colors.blueGrey,
+              ),
               child: Text(
-                "I apologize",
+                "c4a.shop",
                 style: TextStyle(
+                  color: Colors.white,
                   fontSize: 22,
-                  // wordSpacing: 2,
-                  // letterSpacing: 2,
-                  // color: Colors.amber,
-                  // height: 1.5,
-                  // letterSpacing: 2,
-                  // fontWeight: FontWeight.w500,
-                  // fontStyle: FontStyle.italic
-                  // decoration: TextDecoration.underline
-                  // backgroundColor: Colors.limeAccent,
                 ),
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
               ),
             ),
-            SizedBox(
-              width: 100,
-            ),
-            Container(
-              // color: Colors.lightBlue, CANT USE COLOR AND DECORATIONS PROPERTIES AT THE SAME TIME
-              // margin: EdgeInsets.all(600),
-              padding: EdgeInsets.all(10),
-              // height: 100,
-              // width: 300,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.black,
-                    width: 3,
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    margin: EdgeInsets.fromLTRB(0, 0, 15, 0),
+                    alignment: Alignment.center,
+                    padding: EdgeInsets.all(30),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15),
+                      color: Colors.blueGrey,
+                    ),
+                    child: Text(
+                      "Hassan",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                      ),
+                    ),
                   ),
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.black26
-                  // shape: BoxShape.circle, CANT BE USED WITH BORDER RADIUS
+                  Container(
+                    alignment: Alignment.center,
+                    margin: EdgeInsets.fromLTRB(0, 0, 15, 0),
+                    padding: EdgeInsets.all(30),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15),
+                      color: Colors.blueGrey,
+                    ),
+                    child: Text(
+                      "Hassan",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                      ),
+                    ),
                   ),
-              // transform: Matrix4.rotationZ(0.09),
-              // margin: EdgeInsets.symmetric(vertical: 111, horizontal: 30),
-              // margin: EdgeInsets.fromLTRB(30, 111, 30, 111),
-
-              child: Text(
-                "I apologize",
-                style: TextStyle(
-                  fontSize: 22,
-                  // wordSpacing: 2,
-                  // letterSpacing: 2,
-                  // color: Colors.amber,
-                  // height: 1.5,
-                  // letterSpacing: 2,
-                  // fontWeight: FontWeight.w500,
-                  // fontStyle: FontStyle.italic
-                  // decoration: TextDecoration.underline
-                  // backgroundColor: Colors.limeAccent,
-                ),
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-              ),
-            ),
-            SizedBox(
-              width: 100,
-            ),
-            Container(
-              // color: Colors.lightBlue, CANT USE COLOR AND DECORATIONS PROPERTIES AT THE SAME TIME
-              // margin: EdgeInsets.all(66),
-              padding: EdgeInsets.all(10),
-              height: 100,
-              width: 100,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.black,
-                    width: 3,
+                  Container(
+                    alignment: Alignment.center,
+                    margin: EdgeInsets.fromLTRB(0, 0, 15, 0),
+                    padding: EdgeInsets.all(30),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15),
+                      color: Colors.blueGrey,
+                    ),
+                    child: Text(
+                      "Hassan",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                      ),
+                    ),
                   ),
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.black26
-                  // shape: BoxShape.circle, CANT BE USED WITH BORDER RADIUS
+                  Container(
+                    alignment: Alignment.center,
+                    margin: EdgeInsets.fromLTRB(0, 0, 15, 0),
+                    padding: EdgeInsets.all(30),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15),
+                      color: Colors.blueGrey,
+                    ),
+                    child: Text(
+                      "Hassan",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                      ),
+                    ),
                   ),
-              // transform: Matrix4.rotationZ(0.09),
-              // margin: EdgeInsets.symmetric(vertical: 111, horizontal: 30),
-              // margin: EdgeInsets.fromLTRB(30, 111, 30, 111),
-
-              child: Text(
-                "I apologize",
-                style: TextStyle(
-                  fontSize: 22,
-                  // wordSpacing: 2,
-                  // letterSpacing: 2,
-                  // color: Colors.amber,
-                  // height: 1.5,
-                  // letterSpacing: 2,
-                  // fontWeight: FontWeight.w500,
-                  // fontStyle: FontStyle.italic
-                  // decoration: TextDecoration.underline
-                  // backgroundColor: Colors.limeAccent,
-                ),
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-              ),
-            ),
-            SizedBox(
-              width: 100,
-            ),
-            Container(
-              // color: Colors.lightBlue, CANT USE COLOR AND DECORATIONS PROPERTIES AT THE SAME TIME
-              margin: EdgeInsets.fromLTRB(0, 600, 0, 0),
-              padding: EdgeInsets.all(10),
-              height: 100,
-              width: 100,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.black,
-                    width: 3,
-                  ),
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.black26
-                  // shape: BoxShape.circle, CANT BE USED WITH BORDER RADIUS
-                  ),
-              // transform: Matrix4.rotationZ(0.09),
-              // margin: EdgeInsets.symmetric(vertical: 111, horizontal: 30),
-              // margin: EdgeInsets.fromLTRB(30, 111, 30, 111),
-
-              child: Text(
-                "I apologize",
-                style: TextStyle(
-                  fontSize: 22,
-                  // wordSpacing: 2,
-                  // letterSpacing: 2,
-                  // color: Colors.amber,
-                  // height: 1.5,
-                  // letterSpacing: 2,
-                  // fontWeight: FontWeight.w500,
-                  // fontStyle: FontStyle.italic
-                  // decoration: TextDecoration.underline
-                  // backgroundColor: Colors.limeAccent,
-                ),
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
+                ],
               ),
             ),
             Container(
-              // color: Colors.lightBlue, CANT USE COLOR AND DECORATIONS PROPERTIES AT THE SAME TIME
-              // margin: EdgeInsets.all(66),
-              padding: EdgeInsets.all(10),
-              height: 100,
-              width: 100,
               alignment: Alignment.center,
+              height: 400,
+              margin: EdgeInsets.fromLTRB(0, 30, 0, 0),
               decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.black,
-                    width: 3,
-                  ),
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.black26
-                  // shape: BoxShape.circle, CANT BE USED WITH BORDER RADIUS
-                  ),
-              // transform: Matrix4.rotationZ(0.09),
-              // margin: EdgeInsets.symmetric(vertical: 111, horizontal: 30),
-              // margin: EdgeInsets.fromLTRB(30, 111, 30, 111),
-
-              child: Text(
-                "I apologize",
-                style: TextStyle(
-                  fontSize: 22,
-                  // wordSpacing: 2,
-                  // letterSpacing: 2,
-                  // color: Colors.amber,
-                  // height: 1.5,
-                  // letterSpacing: 2,
-                  // fontWeight: FontWeight.w500,
-                  // fontStyle: FontStyle.italic
-                  // decoration: TextDecoration.underline
-                  // backgroundColor: Colors.limeAccent,
-                ),
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
+                borderRadius: BorderRadius.circular(15),
+                color: Colors.blueGrey,
               ),
-            ),
-            SizedBox(
-              height: 200,
-            ),
-            Container(
-              // color: Colors.lightBlue, CANT USE COLOR AND DECORATIONS PROPERTIES AT THE SAME TIME
-              margin: EdgeInsets.fromLTRB(0, 600, 0, 0),
-              padding: EdgeInsets.all(10),
-              height: 100,
-              width: 100,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.black,
-                    width: 3,
-                  ),
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.black26
-                  // shape: BoxShape.circle, CANT BE USED WITH BORDER RADIUS
-                  ),
-              // transform: Matrix4.rotationZ(0.09),
-              // margin: EdgeInsets.symmetric(vertical: 111, horizontal: 30),
-              // margin: EdgeInsets.fromLTRB(30, 111, 30, 111),
-
               child: Text(
-                "I apologize",
+                "c4a.shop",
                 style: TextStyle(
+                  color: Colors.white,
                   fontSize: 22,
-                  // wordSpacing: 2,
-                  // letterSpacing: 2,
-                  // color: Colors.amber,
-                  // height: 1.5,
-                  // letterSpacing: 2,
-                  // fontWeight: FontWeight.w500,
-                  // fontStyle: FontStyle.italic
-                  // decoration: TextDecoration.underline
-                  // backgroundColor: Colors.limeAccent,
                 ),
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
               ),
             ),
           ],
-          // mainAxisAlignment: MainAxisAlignment.end,  || Down
-          // mainAxisAlignment: MainAxisAlignment.center,  || CENTER ON THE Y AXIS ( vertically)
         ),
       ),
       floatingActionButton: FloatingActionButton(
@@ -307,3 +166,261 @@ class SimpleProject extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+
+
+// SingleChildScrollView(
+//         scrollDirection: Axis.horizontal,
+//         child: Row(
+//           // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//           // crossAxisAlignment: CrossAxisAlignment.center,
+//           children: [
+//             Container(
+//               // color: Colors.lightBlue, CANT USE COLOR AND DECORATIONS PROPERTIES AT THE SAME TIME
+//               // margin: EdgeInsets.all(600),
+//               padding: EdgeInsets.all(10),
+//               // height: 100,
+//               // width: 300,
+//               alignment: Alignment.center,
+//               decoration: BoxDecoration(
+//                   border: Border.all(
+//                     color: Colors.black,
+//                     width: 3,
+//                   ),
+//                   borderRadius: BorderRadius.circular(15),
+//                   color: Colors.black26
+//                   // shape: BoxShape.circle, CANT BE USED WITH BORDER RADIUS
+//                   ),
+//               // transform: Matrix4.rotationZ(0.09),
+//               // margin: EdgeInsets.symmetric(vertical: 111, horizontal: 30),
+//               // margin: EdgeInsets.fromLTRB(30, 111, 30, 111),
+
+//               child: Text(
+//                 "I apologize",
+//                 style: TextStyle(
+//                   fontSize: 22,
+//                   // wordSpacing: 2,
+//                   // letterSpacing: 2,
+//                   // color: Colors.amber,
+//                   // height: 1.5,
+//                   // letterSpacing: 2,
+//                   // fontWeight: FontWeight.w500,
+//                   // fontStyle: FontStyle.italic
+//                   // decoration: TextDecoration.underline
+//                   // backgroundColor: Colors.limeAccent,
+//                 ),
+//                 maxLines: 2,
+//                 overflow: TextOverflow.ellipsis,
+//               ),
+//             ),
+//             SizedBox(
+//               width: 100,
+//             ),
+//             Container(
+//               // color: Colors.lightBlue, CANT USE COLOR AND DECORATIONS PROPERTIES AT THE SAME TIME
+//               // margin: EdgeInsets.all(600),
+//               padding: EdgeInsets.all(10),
+//               // height: 100,
+//               // width: 300,
+//               alignment: Alignment.center,
+//               decoration: BoxDecoration(
+//                   border: Border.all(
+//                     color: Colors.black,
+//                     width: 3,
+//                   ),
+//                   borderRadius: BorderRadius.circular(15),
+//                   color: Colors.black26
+//                   // shape: BoxShape.circle, CANT BE USED WITH BORDER RADIUS
+//                   ),
+//               // transform: Matrix4.rotationZ(0.09),
+//               // margin: EdgeInsets.symmetric(vertical: 111, horizontal: 30),
+//               // margin: EdgeInsets.fromLTRB(30, 111, 30, 111),
+
+//               child: Text(
+//                 "I apologize",
+//                 style: TextStyle(
+//                   fontSize: 22,
+//                   // wordSpacing: 2,
+//                   // letterSpacing: 2,
+//                   // color: Colors.amber,
+//                   // height: 1.5,
+//                   // letterSpacing: 2,
+//                   // fontWeight: FontWeight.w500,
+//                   // fontStyle: FontStyle.italic
+//                   // decoration: TextDecoration.underline
+//                   // backgroundColor: Colors.limeAccent,
+//                 ),
+//                 maxLines: 2,
+//                 overflow: TextOverflow.ellipsis,
+//               ),
+//             ),
+//             SizedBox(
+//               width: 100,
+//             ),
+//             Container(
+//               // color: Colors.lightBlue, CANT USE COLOR AND DECORATIONS PROPERTIES AT THE SAME TIME
+//               // margin: EdgeInsets.all(66),
+//               padding: EdgeInsets.all(10),
+//               height: 100,
+//               width: 100,
+//               alignment: Alignment.center,
+//               decoration: BoxDecoration(
+//                   border: Border.all(
+//                     color: Colors.black,
+//                     width: 3,
+//                   ),
+//                   borderRadius: BorderRadius.circular(15),
+//                   color: Colors.black26
+//                   // shape: BoxShape.circle, CANT BE USED WITH BORDER RADIUS
+//                   ),
+//               // transform: Matrix4.rotationZ(0.09),
+//               // margin: EdgeInsets.symmetric(vertical: 111, horizontal: 30),
+//               // margin: EdgeInsets.fromLTRB(30, 111, 30, 111),
+
+//               child: Text(
+//                 "I apologize",
+//                 style: TextStyle(
+//                   fontSize: 22,
+//                   // wordSpacing: 2,
+//                   // letterSpacing: 2,
+//                   // color: Colors.amber,
+//                   // height: 1.5,
+//                   // letterSpacing: 2,
+//                   // fontWeight: FontWeight.w500,
+//                   // fontStyle: FontStyle.italic
+//                   // decoration: TextDecoration.underline
+//                   // backgroundColor: Colors.limeAccent,
+//                 ),
+//                 maxLines: 2,
+//                 overflow: TextOverflow.ellipsis,
+//               ),
+//             ),
+//             SizedBox(
+//               width: 100,
+//             ),
+//             Container(
+//               // color: Colors.lightBlue, CANT USE COLOR AND DECORATIONS PROPERTIES AT THE SAME TIME
+//               margin: EdgeInsets.fromLTRB(0, 600, 0, 0),
+//               padding: EdgeInsets.all(10),
+//               height: 100,
+//               width: 100,
+//               alignment: Alignment.center,
+//               decoration: BoxDecoration(
+//                   border: Border.all(
+//                     color: Colors.black,
+//                     width: 3,
+//                   ),
+//                   borderRadius: BorderRadius.circular(15),
+//                   color: Colors.black26
+//                   // shape: BoxShape.circle, CANT BE USED WITH BORDER RADIUS
+//                   ),
+//               // transform: Matrix4.rotationZ(0.09),
+//               // margin: EdgeInsets.symmetric(vertical: 111, horizontal: 30),
+//               // margin: EdgeInsets.fromLTRB(30, 111, 30, 111),
+
+//               child: Text(
+//                 "I apologize",
+//                 style: TextStyle(
+//                   fontSize: 22,
+//                   // wordSpacing: 2,
+//                   // letterSpacing: 2,
+//                   // color: Colors.amber,
+//                   // height: 1.5,
+//                   // letterSpacing: 2,
+//                   // fontWeight: FontWeight.w500,
+//                   // fontStyle: FontStyle.italic
+//                   // decoration: TextDecoration.underline
+//                   // backgroundColor: Colors.limeAccent,
+//                 ),
+//                 maxLines: 2,
+//                 overflow: TextOverflow.ellipsis,
+//               ),
+//             ),
+//             Container(
+//               // color: Colors.lightBlue, CANT USE COLOR AND DECORATIONS PROPERTIES AT THE SAME TIME
+//               // margin: EdgeInsets.all(66),
+//               padding: EdgeInsets.all(10),
+//               height: 100,
+//               width: 100,
+//               alignment: Alignment.center,
+//               decoration: BoxDecoration(
+//                   border: Border.all(
+//                     color: Colors.black,
+//                     width: 3,
+//                   ),
+//                   borderRadius: BorderRadius.circular(15),
+//                   color: Colors.black26
+//                   // shape: BoxShape.circle, CANT BE USED WITH BORDER RADIUS
+//                   ),
+//               // transform: Matrix4.rotationZ(0.09),
+//               // margin: EdgeInsets.symmetric(vertical: 111, horizontal: 30),
+//               // margin: EdgeInsets.fromLTRB(30, 111, 30, 111),
+
+//               child: Text(
+//                 "I apologize",
+//                 style: TextStyle(
+//                   fontSize: 22,
+//                   // wordSpacing: 2,
+//                   // letterSpacing: 2,
+//                   // color: Colors.amber,
+//                   // height: 1.5,
+//                   // letterSpacing: 2,
+//                   // fontWeight: FontWeight.w500,
+//                   // fontStyle: FontStyle.italic
+//                   // decoration: TextDecoration.underline
+//                   // backgroundColor: Colors.limeAccent,
+//                 ),
+//                 maxLines: 2,
+//                 overflow: TextOverflow.ellipsis,
+//               ),
+//             ),
+//             SizedBox(
+//               height: 200,
+//             ),
+//             Container(
+//               // color: Colors.lightBlue, CANT USE COLOR AND DECORATIONS PROPERTIES AT THE SAME TIME
+//               margin: EdgeInsets.fromLTRB(0, 600, 0, 0),
+//               padding: EdgeInsets.all(10),
+//               height: 100,
+//               width: 100,
+//               alignment: Alignment.center,
+//               decoration: BoxDecoration(
+//                   border: Border.all(
+//                     color: Colors.black,
+//                     width: 3,
+//                   ),
+//                   borderRadius: BorderRadius.circular(15),
+//                   color: Colors.black26
+//                   // shape: BoxShape.circle, CANT BE USED WITH BORDER RADIUS
+//                   ),
+//               // transform: Matrix4.rotationZ(0.09),
+//               // margin: EdgeInsets.symmetric(vertical: 111, horizontal: 30),
+//               // margin: EdgeInsets.fromLTRB(30, 111, 30, 111),
+
+//               child: Text(
+//                 "I apologize",
+//                 style: TextStyle(
+//                   fontSize: 22,
+//                   // wordSpacing: 2,
+//                   // letterSpacing: 2,
+//                   // color: Colors.amber,
+//                   // height: 1.5,
+//                   // letterSpacing: 2,
+//                   // fontWeight: FontWeight.w500,
+//                   // fontStyle: FontStyle.italic
+//                   // decoration: TextDecoration.underline
+//                   // backgroundColor: Colors.limeAccent,
+//                 ),
+//                 maxLines: 2,
+//                 overflow: TextOverflow.ellipsis,
+//               ),
+//             ),
+//           ],
+//           // mainAxisAlignment: MainAxisAlignment.end,  || Down
+//           // mainAxisAlignment: MainAxisAlignment.center,  || CENTER ON THE Y AXIS ( vertically)
+//         ),
+//       )
