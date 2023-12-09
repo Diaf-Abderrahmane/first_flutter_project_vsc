@@ -50,22 +50,43 @@ class SimpleProject extends StatelessWidget {
               )),
         ],
       ),
-      body: Text(
-        "I apologize for the confusion in my previous response. It looks like there was a mistake in the instructions. The id() method is not used in the dependencies block in Gradle.",
-        style: TextStyle(
-          fontSize: 22,
-          wordSpacing: 2,
-          // letterSpacing: 2,
-          // color: Colors.amber,
-          // height: 1.5,
-          // letterSpacing: 2,
-          // fontWeight: FontWeight.w500,
-          // fontStyle: FontStyle.italic
-          // decoration: TextDecoration.underline
-          // backgroundColor: Colors.limeAccent,
+      body: Container(
+        // color: Colors.lightBlue, CANT USE COLOR AND DECORATIONS PROPERTIES AT THE SAME TIME
+        margin: EdgeInsets.all(66),
+        padding: EdgeInsets.all(10),
+        height: 200,
+        width: 300,
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+            border: Border.all(
+              color: Colors.black,
+              width: 3,
+            ),
+            borderRadius: BorderRadius.circular(15),
+            color: Colors.black26
+            // shape: BoxShape.circle, CANT BE USED WITH BORDER RADIUS
+            ),
+        // transform: Matrix4.rotationZ(0.09),
+        // margin: EdgeInsets.symmetric(vertical: 111, horizontal: 30),
+        // margin: EdgeInsets.fromLTRB(30, 111, 30, 111),
+
+        child: Text(
+          "I apologize",
+          style: TextStyle(
+            fontSize: 22,
+            // wordSpacing: 2,
+            // letterSpacing: 2,
+            // color: Colors.amber,
+            // height: 1.5,
+            // letterSpacing: 2,
+            // fontWeight: FontWeight.w500,
+            // fontStyle: FontStyle.italic
+            // decoration: TextDecoration.underline
+            // backgroundColor: Colors.limeAccent,
+          ),
+          maxLines: 2,
+          overflow: TextOverflow.ellipsis,
         ),
-        maxLines: 2,
-        overflow: TextOverflow.ellipsis,
       ),
       floatingActionButton: FloatingActionButton(
           onPressed: () {},
