@@ -50,51 +50,94 @@ class SimpleProject extends StatelessWidget {
               )),
         ],
       ),
-      body: Padding(
-        padding: EdgeInsets.only(top: 99),
+      body: Center(
         child: Container(
-          color: Colors.blueGrey,
+          padding: EdgeInsets.all(5),
+          width: 300,
           height: 300,
-          child: Row(
+          color: Colors.blueGrey,
+          child: Stack(
             children: [
-              Container(
-                color: Colors.amber[200],
-                alignment: Alignment.center,
-                width: 99,
-                height: 99,
-                child: Text(
-                  "c4a.shop",
-                  style: TextStyle(
-                    fontSize: 20,
+              Positioned(
+                bottom: 0,
+                child: Container(
+                  alignment: Alignment.center,
+                  width: 100,
+                  height: 100,
+                  color: Colors.green[200],
+                  child: Text(
+                    "c4a.shop",
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.black,
+                    ),
                   ),
                 ),
               ),
-              Expanded(
-                flex: 1,
+              Positioned(
                 child: Container(
-                  color: Colors.blue[200],
                   alignment: Alignment.center,
-                  width: 99,
-                  height: 99,
+                  width: 100,
+                  height: 100,
+                  color: Colors.amber[200],
                   child: Text(
                     "c4a.shop",
-                    style: TextStyle(fontSize: 20, color: Colors.white),
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.black,
+                    ),
                   ),
                 ),
               ),
-              Expanded(
-                flex: 1,
+              Positioned(
+                bottom: 0,
+                right: 0,
                 child: Container(
-                  color: Colors.red[200],
                   alignment: Alignment.center,
-                  width: 99,
-                  height: 99,
+                  width: 100,
+                  height: 100,
+                  color: Colors.green[200],
                   child: Text(
                     "c4a.shop",
-                    style: TextStyle(fontSize: 20, color: Colors.white),
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.black,
+                    ),
                   ),
                 ),
-              )
+              ),
+              Positioned(
+                top: 0,
+                right: 0,
+                child: Container(
+                  alignment: Alignment.center,
+                  width: 100,
+                  height: 100,
+                  color: Colors.amber[200],
+                  child: Text(
+                    "c4a.shop",
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ),
+              Center(
+                child: Container(
+                  alignment: Alignment.center,
+                  width: 100,
+                  height: 100,
+                  color: Colors.red[300],
+                  child: Text(
+                    "c4a.shop",
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
