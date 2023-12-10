@@ -50,14 +50,14 @@ class SimpleProject extends StatelessWidget {
               )),
         ],
       ),
-      body: Container(
-        color: Colors.blueGrey,
-        height: 300,
-        child: Row(
-          children: [
-            Expanded(
-              flex: 1,
-              child: Container(
+      body: Padding(
+        padding: EdgeInsets.only(top: 99),
+        child: Container(
+          color: Colors.blueGrey,
+          height: 300,
+          child: Row(
+            children: [
+              Container(
                 color: Colors.amber[200],
                 alignment: Alignment.center,
                 width: 99,
@@ -69,34 +69,34 @@ class SimpleProject extends StatelessWidget {
                   ),
                 ),
               ),
-            ),
-            Expanded(
-              flex: 1,
-              child: Container(
-                color: Colors.blue[200],
-                alignment: Alignment.center,
-                width: 99,
-                height: 99,
-                child: Text(
-                  "c4a.shop",
-                  style: TextStyle(fontSize: 20, color: Colors.white),
+              Expanded(
+                flex: 1,
+                child: Container(
+                  color: Colors.blue[200],
+                  alignment: Alignment.center,
+                  width: 99,
+                  height: 99,
+                  child: Text(
+                    "c4a.shop",
+                    style: TextStyle(fontSize: 20, color: Colors.white),
+                  ),
                 ),
               ),
-            ),
-            Expanded(
-              flex: 1,
-              child: Container(
-                color: Colors.red[200],
-                alignment: Alignment.center,
-                width: 99,
-                height: 99,
-                child: Text(
-                  "c4a.shop",
-                  style: TextStyle(fontSize: 20, color: Colors.white),
+              Expanded(
+                flex: 1,
+                child: Container(
+                  color: Colors.red[200],
+                  alignment: Alignment.center,
+                  width: 99,
+                  height: 99,
+                  child: Text(
+                    "c4a.shop",
+                    style: TextStyle(fontSize: 20, color: Colors.white),
+                  ),
                 ),
-              ),
-            )
-          ],
+              )
+            ],
+          ),
         ),
       ),
     );
