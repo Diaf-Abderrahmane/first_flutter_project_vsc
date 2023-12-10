@@ -59,7 +59,7 @@ class SimpleProject extends StatelessWidget {
               width: double.infinity,
               margin: EdgeInsets.fromLTRB(0, 0, 0, 30),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
+                borderRadius: BorderRadius.circular(20),
                 color: Colors.blueGrey,
               ),
               child: Text(
@@ -70,74 +70,107 @@ class SimpleProject extends StatelessWidget {
                 ),
               ),
             ),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            Container(
+              margin: EdgeInsets.fromLTRB(100, 0, 100, 0),
+              color: Colors.blue[200],
+              width: 500,
+              height: 300,
+              alignment: Alignment.center,
+              child: Wrap(
+                spacing: 10,
+                runSpacing: 10,
+                // alignment: WrapAlignment.spaceAround,
+                direction: Axis.vertical,
                 children: [
-                  Container(
-                    margin: EdgeInsets.fromLTRB(0, 0, 15, 0),
-                    alignment: Alignment.center,
-                    padding: EdgeInsets.all(30),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: Colors.blueGrey,
-                    ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all(Colors.orange[500]),
+                        foregroundColor:
+                            MaterialStateProperty.all(Colors.blue[800]),
+                        padding: MaterialStateProperty.all(EdgeInsets.all(20)),
+                        shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)))),
                     child: Text(
-                      "Hassan",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                      ),
+                      "1",
+                      style: TextStyle(fontSize: 22),
                     ),
                   ),
-                  Container(
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.fromLTRB(0, 0, 15, 0),
-                    padding: EdgeInsets.all(30),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: Colors.blueGrey,
-                    ),
+                  ElevatedButton(
+                    onPressed: () {},
                     child: Text(
-                      "Hassan",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                      ),
+                      "2",
+                      style: TextStyle(fontSize: 22),
                     ),
+                    style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all(Colors.orange[500]),
+                        foregroundColor:
+                            MaterialStateProperty.all(Colors.blue[800]),
+                        padding: MaterialStateProperty.all(EdgeInsets.all(20)),
+                        shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)))),
                   ),
-                  Container(
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.fromLTRB(0, 0, 15, 0),
-                    padding: EdgeInsets.all(30),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: Colors.blueGrey,
-                    ),
+                  ElevatedButton(
+                    onPressed: () {},
                     child: Text(
-                      "Hassan",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                      ),
+                      "3",
+                      style: TextStyle(fontSize: 22),
                     ),
+                    style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all(Colors.orange[500]),
+                        foregroundColor:
+                            MaterialStateProperty.all(Colors.blue[800]),
+                        padding: MaterialStateProperty.all(EdgeInsets.all(20)),
+                        shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)))),
                   ),
-                  Container(
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.fromLTRB(0, 0, 15, 0),
-                    padding: EdgeInsets.all(30),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: Colors.blueGrey,
-                    ),
+                  ElevatedButton(
+                    onPressed: () {},
                     child: Text(
-                      "Hassan",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                      ),
+                      "4",
+                      style: TextStyle(fontSize: 22),
                     ),
+                    style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all(Colors.orange[500]),
+                        foregroundColor:
+                            MaterialStateProperty.all(Colors.blue[800]),
+                        padding: MaterialStateProperty.all(EdgeInsets.all(20)),
+                        shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)))),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: Text(
+                      "5",
+                      style: TextStyle(fontSize: 22),
+                    ),
+                    style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all(Colors.orange[500]),
+                        foregroundColor:
+                            MaterialStateProperty.all(Colors.blue[800]),
+                        padding: MaterialStateProperty.all(EdgeInsets.all(20)),
+                        shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)))),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: Text(
+                      "6",
+                      style: TextStyle(fontSize: 22),
+                    ),
+                    style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all(Colors.orange[500]),
+                        foregroundColor:
+                            MaterialStateProperty.all(Colors.blue[800]),
+                        padding: MaterialStateProperty.all(EdgeInsets.all(20)),
+                        shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)))),
                   ),
                 ],
               ),
@@ -148,7 +181,7 @@ class SimpleProject extends StatelessWidget {
               width: double.infinity,
               margin: EdgeInsets.fromLTRB(0, 30, 0, 0),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
+                borderRadius: BorderRadius.circular(20),
                 color: Colors.blueGrey,
               ),
               child: Text(
@@ -162,9 +195,6 @@ class SimpleProject extends StatelessWidget {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          child: IconButton(onPressed: () {}, icon: Icon(Icons.add))),
     );
   }
 }
@@ -193,7 +223,7 @@ class SimpleProject extends StatelessWidget {
 //                     color: Colors.black,
 //                     width: 3,
 //                   ),
-//                   borderRadius: BorderRadius.circular(15),
+//                   borderRadius: BorderRadius.circular(20),
 //                   color: Colors.black26
 //                   // shape: BoxShape.circle, CANT BE USED WITH BORDER RADIUS
 //                   ),
@@ -234,7 +264,7 @@ class SimpleProject extends StatelessWidget {
 //                     color: Colors.black,
 //                     width: 3,
 //                   ),
-//                   borderRadius: BorderRadius.circular(15),
+//                   borderRadius: BorderRadius.circular(20),
 //                   color: Colors.black26
 //                   // shape: BoxShape.circle, CANT BE USED WITH BORDER RADIUS
 //                   ),
@@ -275,7 +305,7 @@ class SimpleProject extends StatelessWidget {
 //                     color: Colors.black,
 //                     width: 3,
 //                   ),
-//                   borderRadius: BorderRadius.circular(15),
+//                   borderRadius: BorderRadius.circular(20),
 //                   color: Colors.black26
 //                   // shape: BoxShape.circle, CANT BE USED WITH BORDER RADIUS
 //                   ),
@@ -316,7 +346,7 @@ class SimpleProject extends StatelessWidget {
 //                     color: Colors.black,
 //                     width: 3,
 //                   ),
-//                   borderRadius: BorderRadius.circular(15),
+//                   borderRadius: BorderRadius.circular(20),
 //                   color: Colors.black26
 //                   // shape: BoxShape.circle, CANT BE USED WITH BORDER RADIUS
 //                   ),
@@ -354,7 +384,7 @@ class SimpleProject extends StatelessWidget {
 //                     color: Colors.black,
 //                     width: 3,
 //                   ),
-//                   borderRadius: BorderRadius.circular(15),
+//                   borderRadius: BorderRadius.circular(20),
 //                   color: Colors.black26
 //                   // shape: BoxShape.circle, CANT BE USED WITH BORDER RADIUS
 //                   ),
@@ -395,7 +425,7 @@ class SimpleProject extends StatelessWidget {
 //                     color: Colors.black,
 //                     width: 3,
 //                   ),
-//                   borderRadius: BorderRadius.circular(15),
+//                   borderRadius: BorderRadius.circular(20),
 //                   color: Colors.black26
 //                   // shape: BoxShape.circle, CANT BE USED WITH BORDER RADIUS
 //                   ),
