@@ -70,110 +70,21 @@ class SimpleProject extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              margin: EdgeInsets.fromLTRB(100, 0, 100, 0),
-              color: Colors.blue[200],
-              width: 500,
-              height: 300,
-              alignment: Alignment.center,
-              child: Wrap(
-                spacing: 10,
-                runSpacing: 10,
-                // alignment: WrapAlignment.spaceAround,
-                direction: Axis.vertical,
-                children: [
-                  ElevatedButton(
-                    onPressed: () {},
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Colors.orange[500]),
-                        foregroundColor:
-                            MaterialStateProperty.all(Colors.blue[800]),
-                        padding: MaterialStateProperty.all(EdgeInsets.all(20)),
-                        shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20)))),
-                    child: Text(
-                      "1",
-                      style: TextStyle(fontSize: 22),
-                    ),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {},
-                    child: Text(
-                      "2",
-                      style: TextStyle(fontSize: 22),
-                    ),
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Colors.orange[500]),
-                        foregroundColor:
-                            MaterialStateProperty.all(Colors.blue[800]),
-                        padding: MaterialStateProperty.all(EdgeInsets.all(20)),
-                        shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20)))),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {},
-                    child: Text(
-                      "3",
-                      style: TextStyle(fontSize: 22),
-                    ),
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Colors.orange[500]),
-                        foregroundColor:
-                            MaterialStateProperty.all(Colors.blue[800]),
-                        padding: MaterialStateProperty.all(EdgeInsets.all(20)),
-                        shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20)))),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {},
-                    child: Text(
-                      "4",
-                      style: TextStyle(fontSize: 22),
-                    ),
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Colors.orange[500]),
-                        foregroundColor:
-                            MaterialStateProperty.all(Colors.blue[800]),
-                        padding: MaterialStateProperty.all(EdgeInsets.all(20)),
-                        shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20)))),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {},
-                    child: Text(
-                      "5",
-                      style: TextStyle(fontSize: 22),
-                    ),
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Colors.orange[500]),
-                        foregroundColor:
-                            MaterialStateProperty.all(Colors.blue[800]),
-                        padding: MaterialStateProperty.all(EdgeInsets.all(20)),
-                        shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20)))),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {},
-                    child: Text(
-                      "6",
-                      style: TextStyle(fontSize: 22),
-                    ),
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Colors.orange[500]),
-                        foregroundColor:
-                            MaterialStateProperty.all(Colors.blue[800]),
-                        padding: MaterialStateProperty.all(EdgeInsets.all(20)),
-                        shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20)))),
-                  ),
-                ],
+            ClipRRect(
+              borderRadius: BorderRadius.circular(100),
+              child: Image.network(
+                "https://w7.pngwing.com/pngs/490/971/png-transparent-naruto-uzumaki-naruto-shipp%C5%ABden-kakashi-hatake-itachi-uchiha-naruto-hand-fictional-character-cartoon-thumbnail.png",
+                fit: BoxFit.cover,
+                width: 200,
+                height: 200,
+                loadingBuilder: (context, child, progress) {
+                  return progress == null ? child : CircularProgressIndicator();
+                },
               ),
+            ),
+            CircleAvatar(
+              backgroundImage: AssetImage("assets/food_plate.png"),
+              radius: 60,
             ),
             Container(
               alignment: Alignment.center,
