@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 void main() {
   runApp(const MyApp());
@@ -88,6 +89,27 @@ class SimpleProject extends StatelessWidget {
                 backgroundImage: NetworkImage(
                     "https://w7.pngwing.com/pngs/490/971/png-transparent-naruto-uzumaki-naruto-shipp%C5%ABden-kakashi-hatake-itachi-uchiha-naruto-hand-fictional-character-cartoon-thumbnail.png"),
                 radius: 30,
+              ),
+              Stack(
+                child: Row(
+                  children: [
+                    SvgPicture.asset(
+                      "assets/img/icons8-facebook.svg",
+                      color: Colors.blue,
+                      height: 50,
+                    ),
+                    SvgPicture.asset(
+                      "assets/img/icons8-facebook.svg",
+                      color: Colors.blue,
+                      height: 50,
+                    ),
+                    SvgPicture.asset(
+                      "assets/img/icons8-facebook.svg",
+                      color: Colors.blue,
+                      height: 50,
+                    )
+                  ],
+                ),
               ),
             ],
           ),
