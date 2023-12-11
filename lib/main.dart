@@ -51,23 +51,21 @@ class SimpleProject extends StatelessWidget {
               )),
         ],
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Container(
-              alignment: Alignment.center,
-              height: 400,
-              width: double.infinity,
-              margin: EdgeInsets.fromLTRB(0, 0, 0, 30),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: Colors.blueGrey,
-              ),
-              child: Text(
-                "c4a.shop",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 22,
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Center(
+                child: Container(
+                  margin: EdgeInsets.all(30),
+                  child: Text(
+                    "Naruto",
+                    style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ),
               ),
               Container(
@@ -91,6 +89,27 @@ class SimpleProject extends StatelessWidget {
                 backgroundImage: NetworkImage(
                     "https://w7.pngwing.com/pngs/490/971/png-transparent-naruto-uzumaki-naruto-shipp%C5%ABden-kakashi-hatake-itachi-uchiha-naruto-hand-fictional-character-cartoon-thumbnail.png"),
                 radius: 30,
+              ),
+              Stack(
+                child: Row(
+                  children: [
+                    SvgPicture.asset(
+                      "assets/img/icons8-facebook.svg",
+                      color: Colors.blue,
+                      height: 50,
+                    ),
+                    SvgPicture.asset(
+                      "assets/img/icons8-facebook.svg",
+                      color: Colors.blue,
+                      height: 50,
+                    ),
+                    SvgPicture.asset(
+                      "assets/img/icons8-facebook.svg",
+                      color: Colors.blue,
+                      height: 50,
+                    )
+                  ],
+                ),
               ),
             ],
           ),
