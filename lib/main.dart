@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -26,120 +26,98 @@ class SimpleProject extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 5,
-        title: Text("Facebook"),
-        centerTitle: true,
-        leading: IconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.menu,
-              size: 33,
-            )),
-        actions: [
-          IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.message,
-                size: 22,
-              )),
-          IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.search,
-                size: 33,
-              )),
-        ],
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Column(
-              children: [
-                Container(
-                  margin: EdgeInsets.all(30),
-                  child: Text(
-                    "Naruto",
-                    style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
+        body: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Container(
+          height: 300,
+          margin: EdgeInsets.all(50),
+          padding: EdgeInsets.all(20),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100),
+                  color: Colors.amber.shade200,
                 ),
-                Container(
-                  margin: EdgeInsets.only(bottom: 20),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(100),
-                    child: Image.network(
-                      "https://w7.pngwing.com/pngs/490/971/png-transparent-naruto-uzumaki-naruto-shipp%C5%ABden-kakashi-hatake-itachi-uchiha-naruto-hand-fictional-character-cartoon-thumbnail.png",
-                      fit: BoxFit.cover,
-                      width: 200,
-                      height: 200,
-                      loadingBuilder: (context, child, progress) {
-                        return progress == null
-                            ? child
-                            : CircularProgressIndicator();
-                      },
-                    ),
-                  ),
+                child: TextField(
+                  decoration: InputDecoration(
+                      border: InputBorder.none,
+                      icon: Icon(
+                        Icons.person,
+                        size: 30,
+                      ),
+                      iconColor: Colors.grey[600],
+                      labelText: "Your Email",
+                      labelStyle: TextStyle(fontSize: 15)),
+
+                  // obscureText: false,
+                  // keyboardType: TextInputType.name, // input type
+                  // textInputAction: TextInputAction.done, //action ( done or next or .. )
+                  // decoration: InputDecoration(
+                  //   // hintText: "email",
+                  //   labelText: "Email",
+                  //   labelStyle: TextStyle(fontSize: 18),
+                  //   prefixIcon: Icon(Icons.email),
+                  //   suffixIcon: Icon(Icons.visibility),
+
+                  // ),
                 ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Container(
-                  padding: EdgeInsets.all(20),
-                  decoration: BoxDecoration(
-                    border: Border.all(width: 2, color: Colors.grey.shade300),
-                    borderRadius: const BorderRadius.all(Radius.circular(100)),
-                  ),
-                  child: SvgPicture.asset(
-                    "assets/img/icons8-facebook.svg",
-                    color: Colors.blue,
-                    height: 30,
-                  ),
+              ),
+              Container(
+                padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100),
+                  color: Colors.amber.shade200,
                 ),
-                Container(
-                  padding: EdgeInsets.all(20),
-                  decoration: BoxDecoration(
-                    border: Border.all(width: 2, color: Colors.grey.shade300),
-                    borderRadius: const BorderRadius.all(Radius.circular(100)),
-                  ),
-                  child: SvgPicture.asset(
-                    "assets/img/icons8-facebook.svg",
-                    color: Colors.blue,
-                    height: 30,
-                  ),
+                child: TextField(
+                  decoration: InputDecoration(
+                      border: InputBorder.none,
+                      icon: Icon(
+                        Icons.lock,
+                        size: 27,
+                      ),
+                      iconColor: Colors.grey[600],
+                      labelText: "Password",
+                      labelStyle: TextStyle(fontSize: 15)),
+
+                  // obscureText: false,
+                  // keyboardType: TextInputType.name, // input type
+                  // textInputAction: TextInputAction.done, //action ( done or next or .. )
+                  // decoration: InputDecoration(
+                  //   // hintText: "email",
+                  //   labelText: "Email",
+                  //   labelStyle: TextStyle(fontSize: 18),
+                  //   prefixIcon: Icon(Icons.email),
+                  //   suffixIcon: Icon(Icons.visibility),
+
+                  // ),
                 ),
-                Container(
-                  padding: EdgeInsets.all(20),
-                  decoration: BoxDecoration(
-                    border: Border.all(width: 2, color: Colors.grey.shade300),
-                    borderRadius: const BorderRadius.all(Radius.circular(100)),
-                  ),
-                  child: SvgPicture.asset(
-                    "assets/img/icons8-facebook.svg",
-                    color: Colors.blue,
-                    height: 30,
-                  ),
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                child: Container(
+                    width: double.infinity,
+                    alignment: Alignment.center,
+                    child: Text(
+                      "Login",
+                      style: TextStyle(fontSize: 18),
+                    )),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.purple[50]),
+                  shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(25))),
                 ),
-              ],
-            ),
-          ],
+              )
+            ],
+          ),
         ),
-      ),
-    );
+      ],
+    ));
   }
 }
-
-
-
-
-
-
 
 // SingleChildScrollView(
 //         scrollDirection: Axis.horizontal,
