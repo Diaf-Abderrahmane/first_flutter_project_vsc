@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 void main() {
   runApp(const MyApp());
@@ -69,46 +70,32 @@ class SimpleProject extends StatelessWidget {
                   fontSize: 22,
                 ),
               ),
-            ),
-            ClipRRect(
-              borderRadius: BorderRadius.circular(100),
-              child: Image.network(
-                "https://w7.pngwing.com/pngs/490/971/png-transparent-naruto-uzumaki-naruto-shipp%C5%ABden-kakashi-hatake-itachi-uchiha-naruto-hand-fictional-character-cartoon-thumbnail.png",
-                fit: BoxFit.cover,
-                width: 200,
-                height: 200,
-                loadingBuilder: (context, child, progress) {
-                  return progress == null ? child : CircularProgressIndicator();
-                },
-              ),
-            ),
-            CircleAvatar(
-              backgroundImage: AssetImage("assets/food_plate.png"),
-              radius: 60,
-            ),
-            Container(
-              alignment: Alignment.center,
-              height: 400,
-              width: double.infinity,
-              margin: EdgeInsets.fromLTRB(0, 30, 0, 0),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: Colors.blueGrey,
-              ),
-              child: Text(
-                "c4a.shop",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 22,
+              Container(
+                margin: EdgeInsets.only(bottom: 20),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(100),
+                  child: Image.network(
+                    "https://w7.pngwing.com/pngs/490/971/png-transparent-naruto-uzumaki-naruto-shipp%C5%ABden-kakashi-hatake-itachi-uchiha-naruto-hand-fictional-character-cartoon-thumbnail.png",
+                    fit: BoxFit.cover,
+                    width: 200,
+                    height: 200,
+                    loadingBuilder: (context, child, progress) {
+                      return progress == null
+                          ? child
+                          : CircularProgressIndicator();
+                    },
+                  ),
                 ),
               ),
-            ),
-          ],
+              CircleAvatar(
+                backgroundImage: NetworkImage(
+                    "https://w7.pngwing.com/pngs/490/971/png-transparent-naruto-uzumaki-naruto-shipp%C5%ABden-kakashi-hatake-itachi-uchiha-naruto-hand-fictional-character-cartoon-thumbnail.png"),
+                radius: 30,
+              ),
+            ],
+          ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          child: IconButton(onPressed: () {}, icon: Icon(Icons.add))),
     );
   }
 }
