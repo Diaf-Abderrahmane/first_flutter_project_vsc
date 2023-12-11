@@ -53,11 +53,12 @@ class SimpleProject extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              Center(
-                child: Container(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Column(
+              children: [
+                Container(
                   margin: EdgeInsets.all(30),
                   child: Text(
                     "Naruto",
@@ -67,52 +68,67 @@ class SimpleProject extends StatelessWidget {
                     ),
                   ),
                 ),
-              ),
-              Container(
-                margin: EdgeInsets.only(bottom: 20),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(100),
-                  child: Image.network(
-                    "https://w7.pngwing.com/pngs/490/971/png-transparent-naruto-uzumaki-naruto-shipp%C5%ABden-kakashi-hatake-itachi-uchiha-naruto-hand-fictional-character-cartoon-thumbnail.png",
-                    fit: BoxFit.cover,
-                    width: 200,
-                    height: 200,
-                    loadingBuilder: (context, child, progress) {
-                      return progress == null
-                          ? child
-                          : CircularProgressIndicator();
-                    },
+                Container(
+                  margin: EdgeInsets.only(bottom: 20),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(100),
+                    child: Image.network(
+                      "https://w7.pngwing.com/pngs/490/971/png-transparent-naruto-uzumaki-naruto-shipp%C5%ABden-kakashi-hatake-itachi-uchiha-naruto-hand-fictional-character-cartoon-thumbnail.png",
+                      fit: BoxFit.cover,
+                      width: 200,
+                      height: 200,
+                      loadingBuilder: (context, child, progress) {
+                        return progress == null
+                            ? child
+                            : CircularProgressIndicator();
+                      },
+                    ),
                   ),
                 ),
-              ),
-              CircleAvatar(
-                backgroundImage: NetworkImage(
-                    "https://w7.pngwing.com/pngs/490/971/png-transparent-naruto-uzumaki-naruto-shipp%C5%ABden-kakashi-hatake-itachi-uchiha-naruto-hand-fictional-character-cartoon-thumbnail.png"),
-                radius: 30,
-              ),
-              Stack(
-                child: Row(
-                  children: [
-                    SvgPicture.asset(
-                      "assets/img/icons8-facebook.svg",
-                      color: Colors.blue,
-                      height: 50,
-                    ),
-                    SvgPicture.asset(
-                      "assets/img/icons8-facebook.svg",
-                      color: Colors.blue,
-                      height: 50,
-                    ),
-                    SvgPicture.asset(
-                      "assets/img/icons8-facebook.svg",
-                      color: Colors.blue,
-                      height: 50,
-                    )
-                  ],
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(
+                  padding: EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                    border: Border.all(width: 2, color: Colors.grey.shade300),
+                    borderRadius: const BorderRadius.all(Radius.circular(100)),
+                  ),
+                  child: SvgPicture.asset(
+                    "assets/img/icons8-facebook.svg",
+                    color: Colors.blue,
+                    height: 30,
+                  ),
                 ),
-              ),
-            ],
-          ),
+                Container(
+                  padding: EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                    border: Border.all(width: 2, color: Colors.grey.shade300),
+                    borderRadius: const BorderRadius.all(Radius.circular(100)),
+                  ),
+                  child: SvgPicture.asset(
+                    "assets/img/icons8-facebook.svg",
+                    color: Colors.blue,
+                    height: 30,
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                    border: Border.all(width: 2, color: Colors.grey.shade300),
+                    borderRadius: const BorderRadius.all(Radius.circular(100)),
+                  ),
+                  child: SvgPicture.asset(
+                    "assets/img/icons8-facebook.svg",
+                    color: Colors.blue,
+                    height: 30,
+                  ),
+                ),
+              ],
+            ),
+          ],
         ),
       ),
     );
