@@ -6,6 +6,16 @@ class Signup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        backgroundColor: Colors.purple,
+        child: Icon(
+          Icons.home,
+          color: Colors.white,
+        ),
+      ),
       appBar: AppBar(
         title: Text(
           "Welcome",
